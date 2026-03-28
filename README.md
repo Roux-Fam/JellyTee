@@ -3,7 +3,7 @@
 ## 1. Установите репозиторий
 ```cpp
 cd src/game/client
-git submodule add https://github.com/Roux-Fam/JellyTee
+git clone https://github.com/Roux-Fam/JellyTee.git Roux
 ```
 в CMakeLists.txt:
 перед
