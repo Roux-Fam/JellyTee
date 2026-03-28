@@ -19,7 +19,7 @@ ui_scrollregion.h
 ${ROUX_GAME_CLIENT_FILES}
 ```
 
-## 1. Добавить конфиги
+## 2. Добавить конфиги
 
 Нужные переменные:
 
@@ -29,7 +29,7 @@ MACRO_CONFIG_INT(RouxTeeJellyStrength, roux_tee_jelly_strength, 100, 0, 1000, CF
 MACRO_CONFIG_INT(RouxTeeJellyDuration, roux_tee_jelly_duration, 100, 1, 500, CFGFLAG_CLIENT | CFGFLAG_SAVE, "Duration of jelly tee deformation")
 ```
 
-## 2. Подключить модуль в gameclient
+## 3. Подключить модуль в gameclient
 
 в:
 - [src/game/client/gameclient.cpp](/src/game/client/gameclient.cpp)
@@ -62,7 +62,7 @@ if(rJelly)
 	rJelly->Reset();
 ```
 
-## 3. Расширить RenderTee (самое сложное)
+## 4. Расширить RenderTee (самое сложное)
 
 Изменения находятся в:
 - [src/game/client/render.h](/src/game/client/render.h)
@@ -221,7 +221,7 @@ void CRenderTools::RenderTee(const CAnimState *pAnim, const CTeeRenderInfo *pInf
 
 
 
-## 4. Подключить в players.cpp
+## 5. Подключить в players.cpp
 
 Файл:
 - [src/game/client/components/players.cpp](/src/game/client/components/players.cpp)
