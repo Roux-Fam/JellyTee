@@ -24,16 +24,19 @@ MACRO_CONFIG_INT(RouxTeeJellyDuration, roux_tee_jelly_duration, 100, 1, 500, CFG
 #include <game/client/Roux/r_jelly.h>
 ```
 
-2. где-то в```cpp
-void CGameClient::OnConsoleInit()```:
+2. где-то в
+```cpp
+void CGameClient::OnConsoleInit()
+```
 вставь
 ```cpp
 rJelly = std::make_unique<CRJelly>(this);
 ```
 
-3. где-то в ```cpp
+3. где-то в
+```cpp
 void CGameClient::OnReset()
-```:
+```
 вставь 
 
 ```cpp
