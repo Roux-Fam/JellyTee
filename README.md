@@ -1,5 +1,23 @@
 # Jelly Tee Integration for DDNet
 
+## 1. Установите репозиторий
+в CMakeLists.txt:
+перед
+```cpp
+set_src(GAME_CLIENT GLOB_RECURSE src/game/client
+```
+вставьте
+```cpp
+add_subdirectory(src/game/client/Roux)
+```
+после
+```cpp
+ui_scrollregion.h
+```
+вставьте
+```cpp
+${ROUX_GAME_CLIENT_FILES}
+```
 
 ## 1. Добавить конфиги
 
