@@ -1,6 +1,10 @@
 # Jelly Tee Integration for DDNet
 
 ## 1. Установите репозиторий
+```cpp
+cd src/game/client
+git submodule add https://github.com/Roux-Fam/JellyTee
+```
 в CMakeLists.txt:
 перед
 ```cpp
